@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #2e2e2e;
+    color: #737373;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* *************** header *************** */
+header{
+    position: fixed;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header div{
+    display: flex;
+}
+
+header div ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+header div ul li:first-of-type{
+    margin-left: 50px;
+}
+
+header a{
+    color: #737373;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    font-weight: 400;
+}
+
+header div>a{
+    margin-left: 50px;
+}
+
+header a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* *************** aside *************** */
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+aside input{
+    display: none;
+}
+
+aside label{
+    margin: 20px 0 10px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+
+aside label:hover{
+    color: #fff;
+}
+
+aside label span{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+aside input:checked+label{
+    color: #fff;
+}
+
+aside input:checked+label span{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #737373;
+}
+
+aside div{
+    height: 5vh;
+    border-left: 1px solid #737373;
+    margin-left: 24px;
+}
+
+/* *************** About *************** */
+#About{
+    padding: 150px 5%;
+    display: grid;
+    grid-template-areas:
+    "AHl1 AHl1"
+    "Hero Hero"
+    "APhoto1 AHl2"
+    "APhoto1 AText1";
+    grid-template-columns: 1fr 1fr;
+}
+
+#About h1{
+    grid-area: AHl1;
+    font-size: 3em;
+    color: #ebccc2;
+    font-weight: 300;
+    margin-bottom: 150px;
+    justify-self: center;
+}
+
+#About .hero{
+    grid-area: Hero;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#About img:last-of-type{
+    grid-area: APhoto1;
+    width: 80%;
+    justify-self: end;
+}
+
+#About h2{
+    grid-area: AHl2;
+    margin: 0 0 30px 50px;
+    font-size: 2em;
+    align-self: flex-end;
+    color: #ebccc2;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#About div{
+    grid-area: AText1;
+    margin-left: 50px;
+    width: 65%;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+/* *************** Lounger *************** */
+#Lounger{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "LPhoto1 LHl2"
+    "LPhoto1 LText1";
+    grid-template-columns: 55% 42%;
+    gap: 3%;
+    margin-bottom: 200px;
+}
+
+#Lounger h2{
+    grid-area: LHl2;
+    align-self: flex-end;
+    color: #ebccc2;
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+#Lounger img{
+    grid-area: LPhoto1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Lounger div{
+    grid-area: LText1;
+    width: 80%;
+}
+
+/* *************** Experience *************** */
+#Experience{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "EPhoto1 EHl2"
+    "EPhoto1 EText1";
+    grid-template-columns: 55% 42%;
+    gap: 3%;
+    margin-bottom: 200px;
+}
+
+#Experience h2{
+    grid-area: EHl2;
+    align-self: flex-end;
+    color: #ebccc2;
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+#Experience img{
+    grid-area: EPhoto1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Experience div{
+    grid-area: EText1;
+    width: 80%;
+}
+
+/* *************** Inspiration *************** */
+#Inspiration{
+    padding: 100px 20%;
+}
+
+#Inspiration #video1{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#Inspiration video{
+    width: 100%;
+}
+
+/* article */
+#Inspiration article h3{
+    color: #ebccc2;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#Inspiration article h2{
+    color: #ebccc2;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#Inspiration article p{
+    margin: 15px 0 100px;
+}
+
+#Inspiration article:nth-of-type(1) span{
+    border: 1px solid #737373;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 0.8em;
+}
+
+#Inspiration article:nth-of-type(2){
+    display: grid;
+    grid-template-areas:
+    "Iimg1 Ittl1"
+    "Iimg1 Itxt1";
+    grid-template-columns: 50% 45%;
+    column-gap: 5%;
+    grid-template-rows: 45% 55%;
+}
+
+#Inspiration article:nth-of-type(2) div{
+    grid-area: Ittl1;
+    align-self: flex-end;
+}
+
+#Inspiration article:nth-of-type(2) img{
+    grid-area: Iimg1;
+    width: 100%;
+}
+
+#Inspiration article:nth-of-type(2) p{
+    grid-area: Itxt1;
+}
+
+#Inspiration article:nth-of-type(3){
+    display: grid;
+    grid-template-areas:
+    "Ittl2 Iimg2"
+    "Itxt2 Iimg2";
+    grid-template-columns: 45% 50%;
+    column-gap: 5%;
+    grid-template-rows: 60% 40%;
+}
+
+#Inspiration article:nth-of-type(3) div{
+    grid-area: Ittl2;
+    align-self: flex-end;
+}
+
+#Inspiration article:nth-of-type(3) img{
+    grid-area: Iimg2;
+    width: 100%;
+}
+
+#Inspiration article:nth-of-type(3) p{
+    grid-area: Itxt2;
+}
+
+/* *************** Shop *************** */
+#Shop{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "SPhoto1 SPhoto2"
+    "SPhoto1 SHl2"
+    "SPhoto1 Stxt1";
+    grid-template-columns: 55% 42%;
+    column-gap: 3%;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+#Shop h2{
+    grid-area: SHl2;
+    color: #ebccc2;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    /* margin-bottom: 50px; */
+}
+
+#Shop img:nth-of-type(1){
+    grid-area: SPhoto1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Shop img:nth-of-type(2){
+    grid-area: SPhoto2;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+#Shop div{
+    grid-area: Stxt1;
+}
+
+#Shop div a{
+    color: #737373;
+    background: #ebccc2;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/* 
+Farben: #2e2e2e / #867772 / #ebccc2 / #fff / #737373 
+ */

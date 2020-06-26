@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #2e2e2e;
+    color: #737373;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* *************** header *************** */
+header{
+    position: fixed;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header div{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+header div ul li{
+    display: inline;
+    margin: 0 5px;
+}
+
+header a{
+    color: #737373;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    font-weight: 400;
+}
+
+header a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* *************** aside *************** */
+aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+aside a{
+    text-decoration: none;
+    color: #737373;
+    display: inline-block;
+    margin: 20px 0 10px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;   
+}
+
+aside a:hover{
+    color: #fff;
+}
+
+aside a span{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+aside a.active{
+    color: #fff;
+}
+
+aside a.active span{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #737373;
+}
+
+aside div{
+    height: 5vh;
+    border-left: 1px solid #737373;
+    margin-left: 24px;
+}
+
+/* *************** ALL *************** */
+h2{
+    font-size: 2em;
+    color: #ebccc2;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+/* *************** About *************** */
+#About{
+    padding: 150px 5%;
+}
+
+#About h1{
+    font-size: 3em;
+    color: #ebccc2;
+    font-weight: 300;
+    margin: 0 0 150px 25%;
+}
+
+#About .hero{
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#About article{
+    display: flex;
+    justify-content: center;
+}
+
+#About article img{
+    width: 35%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#About article div{
+    width: 35%;
+    margin-left: 50px;
+}
+
+#About article h2{
+    margin-top: 50px;
+}
+
+/* *************** Lounger,Experience,Shop *************** */
+.halfImage{
+    height: 100vh;
+    display: flex;
+}
+
+.halfImage h2{
+    margin: 150px 0 100px;
+}
+
+.halfImage>img{
+    width: 55%;
+    height: 100vh;
+    object-fit: cover;
+    margin-right: 5%;
+}
+
+.halfImage div{
+    width: 30%;
+}
+
+/* *************** Shop */
+.shop{
+    text-align: center;
+}
+
+.shop h2{
+    margin: 20px 0;
+}
+
+.shop div{
+    width: 35%;
+}
+
+.shop div img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.shop div a{
+    color: #737373;
+    background: #ebccc2;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+
+.shop div a:hover{
+    background: #fff;
+}
+
+/* *************** Inspiration *************** */
+#Inspiration{
+    padding: 100px 20%;
+}
+
+#Inspiration #video1{
+    width: 80%;
+    margin: 0 auto 100px;
+}
+
+#Inspiration video{
+    width: 100%;
+}
+
+/* article */
+#Inspiration article h3{
+    color: #ebccc2;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#Inspiration article p{
+    margin: 15px 0 100px;
+}
+
+#Inspiration article:nth-of-type(1) span{
+    border: 1px solid #737373;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 0.8em;
+}
+
+#Inspiration .bild{
+    display: flex;
+}
+
+#Inspiration .bild img{
+    width: 50%;
+}
+
+#Inspiration .bild div{
+    padding: 100px 20px 0;
+}
