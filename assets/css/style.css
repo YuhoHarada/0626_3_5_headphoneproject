@@ -184,17 +184,32 @@ p{
     margin: 0 auto;
 }
 
-.shop div a{
+.shop div a, #contact div input:last-of-type{
     color: #737373;
     background: #ebccc2;
     padding: 10px 30px;
     text-decoration: none;
     font-weight: 400;
     transition: 0.5s ease-in-out;
+    border: none;
 }
 
-.shop div a:hover{
+.shop div a:hover, #contact div input:last-of-type:hover{
     background: #fff;
+}
+
+/* *************** Contact */
+#contact label{
+    line-height: 1.5em;
+}
+
+#contact input:nth-of-type(1), 
+#contact input:nth-of-type(2), 
+#contact textarea{
+    width: 100%;
+    background: #737373;
+    margin: 10px 0;
+    border: none;
 }
 
 /* *************** Inspiration *************** */
